@@ -6,30 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Bootstrap</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5 height">
-            <div class="col-4 bg-primary border text-left text-white pt-1">.col-4</div>
-            <div class="col-4 bg-primary border text-left text-white pt-1">.col-4</div>
-            <div class="col-4 bg-primary border text-left text-white pt-1">.col-4</div>
-        </div>
+      <div class="container">
+   <h1 class="text-center mt-1 mb-5">Movies catalog</h1>
 
-        <div class="row mt-1 height">
-            <div class="col-12 bg-primary border text-left text-white mt-1 pt-1">.col-12</div>
-        </div>
+  <div class="container d-flex pt-8">
 
-        <div class="row mt-1 height">
-            <div class="col-6 bg-primary border text-left text-white mt-1 pt-1">.col-6</div>
-            <div class="col-6 bg-primary border text-left text-white mt-1 pt-1">.col-6</div>
-        </div>
+    <div class="width me-4">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+     <input class="form-control mb-4 " name="avengers"  type="text" placeholder="Ave">
+     <input class="form-control mb-3" name="old" type="text" placeholder="3">
+     <select class="form-select mb-3" name="moves-ganer" >
+     <option selected>All</option>
+     </select>
 
-        <div class="row mt-1 height">
-            <div class="col-8 bg-primary border text-left text-white mt-1 pt-1">.col-8</div>
-            <div class="col-2 bg-primary border text-left text-white mt-1 pt-1">.col-2</div>
-            <div class="col-2 bg-primary border text-left text-white mt-1 pt-1">.col-2</div>
-        </div>
+     <select class="form-select mb-3" name="moves-ganer" >
+      <option selected>Rating (high to low)</option>
+     </select>
+    <button class="btn btn-primary mb-4">Search</button>
+      </form>
+
+      <h2 class="left-box-headding">Bookmarked moves</h2>
+ 
+      <ul class="list-group mb-3">
+        <li class="list-group-item mb-4">
+          <h4 class="item__headding">Avengers:Infinity War</h4>
+          <button class="btn btn-danger">Remove</button>
+        </li> 
+
+        <li class="list-group-item mb-4">
+          <h4 class="item__headding">The Avengers</h4>
+          <button class="btn btn-danger">Remove</button>
+        </li> 
+
+        <li class="list-group-item mb-4">
+          <h4 class="item__headding">12 Years a Slave</h4>
+          <button class="btn btn-danger">Remove</button>
+        </li> 
+      </ul>
     </div>
-</body>
+ 
+  
+<div class="right-box w-100">
+  <h5 class="box-headding">Search results:39 </h5>
+  <div class="alert alert-primary" role="alert">
+    Use a form on the left to search for a movie
+  </div>
+
+  <ul class="list-group d-flex flex-row mb-5"> 
+    <li class="list-item w-75 me-5">
+      <img src="./avangers.jpeg" 
+      alt="avangesr photo" 
+      width="370" 
+      height="220"
+      >
+      <h5 class="left-box-inner__headding"> Avengers: Infinty War</h5>
+
+      <div class="d-flex mb-3">
+        <img class="me-2" 
+        src="./vector-calendar-icon-design.jpg" 
+        alt="calendar photo" 
+        width="25" 
+        height="25">
+        <p class="m-0">2018</p>
+      </div>
+
+      <div class="d-flex mb-3">
+        <img class="me-2" 
+        src="./unnamed.jpg" 
+        alt="star photo" 
+        width="25" 
+        height="25" >
+        <p class="m-0">8.7</p>
+      </div>
+
+      <div class="asdawdasdow">
+        <button class="btn btn-outline-primary me-3" type="button">
+          Watch Trailer
+        </button>
+
+        <button class="btn btn-outline-success me-3" type="button" data-bs-target="modal" data-bs-target="#ExampleModel">More Info</button>
+
+        <button class="btn btn-outline-success" type="button">Bookmarks</button>
+      </div>
+    </li>
+
+    <li class="list-item w-50 me-2">
+      <img src="./iron_man.jpg"
+       alt="avangart-original" 
+       width="370" 
+       height="220"
+      >
+      <h5>The Avengers</h5>
+
+      <div class="d-flex mb-3">
+        <img class="me-2" src="./vector-calendar-icon-design.jpg"
+         alt="calendar photo" 
+         width="25" 
+         height="25">
+        <p class="m-0">2012</p>
+      </div>
+
+      <div class="d-flex mb-3">
+        <img class="me-2" src="./unnamed.jpg" 
+        alt="star photo" 
+        width="25" 
+        height="25" >
+        <p class="m-0">8.1</p>
+      </div>
+
+      <div class="asdawdasdow">
+        <button class="btn btn-outline-primary me-3" type="button">
+          Watch Trailer
+        </button>
+
+        <button class="btn btn-outline-success me-3" type="button" data-bs-target="modal" data-bs-target="#ExampleModel">More Info</button>
+
+        <button class="btn btn-outline-success" type="button">Bookmarks</button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="text-center">
+    <div class="btn-group">
+       <button type="button" class="btn me-1 btn-outline-primary active">1</button>
+       <button type="button" class="btn me-1 btn-outline-primary">2</button>
+       <button type="button" class="btn me-1 btn-outline-primary">3</button>
+       <button type="button" class="btn me-1 btn-outline-primary">4</button>
+       <button type="button" class="btn me-1 btn-outline-primary">5</button>
+    </div>
+  </div>
+
+
+</div>  
+</div>
+  </body>
 </html>
